@@ -98,35 +98,32 @@ Finally, automate the process of creating a draft pull request (PR) on GitHub to
 
 
 ## Example Use Cases
-1. Sprint Planning Meetings
+1. **Sprint Planning Meetings**
 
 During a sprint planning meeting, team members discuss the features they will work on for the upcoming sprint. By recording the meeting and using this AI pipeline, the audio can be converted into code specifications for each discussed feature. These specifications are then used to generate draft PRs for all team members, jumpstarting their development work. This ensures that everyone starts with a clear and consistent understanding of the tasks and reduces the time spent on initial setup and documentation.
 
-2. Product Design Requirements
+2. **Product Design Requirements**
 
 In design discussion sessions, various architectural and design decisions are made. Recording these sessions and running the pipeline can create detailed code specifications reflecting the agreed-upon designs. This helps in maintaining consistency across the implementation and ensures that all design considerations are documented and followed. The generated PRs can then be reviewed and refined, ensuring alignment with the discussed design.
 
-3. Client Discussions
+3. **Client Discussions**
 
 Client meetings where requirements for new features or changes are discussed can be recorded and processed using the pipeline. This ensures that the client’s requirements are accurately transcribed and translated into code specifications. Draft PRs can then be generated based on these specifications, allowing for quick implementation and review of client-requested features.
 
-4. Bug Triaging
+4. **Bug Triaging**
 
 In bug triage meetings, teams prioritize and assign bugs to be fixed. By recording these meetings, the pipeline can transcribe the discussions and generate code specifications for each bug fix. This can streamline the process of creating PRs for bug fixes, ensuring that all relevant information from the meeting is included in the implementation plan.
 
-
-The possibilities are endless!
+*The possibilities are endless!*
 
 ## Dependencies
 To get started, ensure you have the following dependencies installed per the `requirements.txt` file:
-
 - librosa
 - torch
 - transformers
 - openai
 - qdrant-client
 - pygithub
-
 
 
 ### Authors
