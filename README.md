@@ -6,7 +6,7 @@ End-to-end AI pipeline that converts an audio file (like a meeting recording) us
 ### Example Audio File
 <audio controls>
   <source src="DesignDiscussion.wav" type="audio/wav">
-  Your browser does not support the audio element.
+  Audio file `DesignDiscussion.wav`
 </audio>
 
 **Produced transcription**
@@ -40,30 +40,6 @@ End-to-end AI pipeline that converts an audio file (like a meeting recording) us
 
 **Code Change**
 ```
-
-"""The main Chat app."""
-
-import reflex as rx
-from chatapp.components import chat, navbar
-
-# Import State for managing current and new states
-from chatapp.state import State 
-from chatapp import style
-
-def index() -> rx.Component:
-    """The main app."""
-    
-    return rx.chakra.vstack(
-        navbar(),
-        chat.chat(),
-        chat.action_bar(),
-        background_color=rx.color("mauve", 1),
-        color=rx.color("mauve", 12),
-        min_height="100vh",
-        align_items="stretch",
-        spacing="0",
-    )
-
 def chat_management() -> rx.Component:
     """Component for managing chat functionalities."""
     
@@ -88,7 +64,6 @@ app = rx.App(
 
 app.add_page(index)
 app.add_page(chat_management, route="manage_chat")
-
 ```
 
 
